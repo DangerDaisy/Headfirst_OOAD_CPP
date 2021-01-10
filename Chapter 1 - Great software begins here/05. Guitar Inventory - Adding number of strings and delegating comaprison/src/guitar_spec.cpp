@@ -51,12 +51,12 @@ Guitar_spec::Guitar_spec(
 	Wood back_wood, 
 	Wood top_wood
 ):
-    builder(builder),
+	builder(builder),
 	num_strings(num_strings),
-    model(model),
-    type(type),
-    back_wood(back_wood),
-    top_wood(top_wood)
+	model(model),
+	type(type),
+	back_wood(back_wood),
+	top_wood(top_wood)
 {}
 
 Builder Guitar_spec::get_builder()
@@ -91,12 +91,12 @@ Wood Guitar_spec::get_top_wood()
 bool operator==(const Guitar_spec &left, const Guitar_spec &right)
 {
     if(
-        left.builder     == right.builder &&
+		left.builder     == right.builder &&
 		left.num_strings == right.num_strings &&
-        left.model       == right.model &&
-        left.type        == right.type &&
-        left.back_wood   == right.back_wood &&
-        left.top_wood    == right.top_wood
+		left.model       == right.model &&
+  		left.type        == right.type &&
+		left.back_wood   == right.back_wood &&
+		left.top_wood    == right.top_wood
     ){
         return true;
     }
