@@ -48,11 +48,11 @@ class Guitar_spec
 public:
     Guitar_spec(
         Builder builder, 
-		unsigned int num_strings,
-		std::string model, 
-		Type type, 
-		Wood back_wood, 
-		Wood top_wood
+	unsigned int num_strings,
+	std::string model, 
+	Type type, 
+	Wood back_wood, 
+	Wood top_wood
     );
     Builder get_builder();
 	unsigned int get_num_strings();
